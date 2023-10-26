@@ -1,30 +1,29 @@
 #include "main.h"
 
+int sqrt_toxy(int n, int i);
 /**
- * _sqrt_recursion - returns the natural square root of a number
- * @n: integer
+ * _sqrt_recursion - main function
+ * @n: int n
  * Return: int
  */
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-	return (_sqrt(n, 1));
+	return (sqrt_toxy(n, 1));
 }
 
 /**
- * _sqrt - _sqrt_recursion
+ * sqrt_toxy - _sqrt_recursion
  * @n: integer
  * @i: integer
  * Return: sqrt
  */
-int _sqrt(int n, int i)
+int sqrt_toxy(int n, int i)
 {
-	if (n < 0)
-		return (-1);
 	if ((i * i) > n)
 		return (-1);
 	if (i * i == n)
 		return (i);
-	return (_sqrt(n, i + 1));
+	return (sqrt_toxy(n, i + 1));
 }
