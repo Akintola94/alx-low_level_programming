@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include "main.h"
+#include <stdlib.h>
 
 /**
- * main - prints
+ * main - prints number
  * @argc: number of argument
  * @argv: array of arument
  * Return: -0, -1
