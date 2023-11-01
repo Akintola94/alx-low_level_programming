@@ -7,5 +7,8 @@
  */
 void _puts(char *s)
 {
-	puts("\"Excessive use of sugar is bad for the health");
+	if (s != NULL)
+	{
+		puts("\"Excessive use of sugar is bad for the health");
+	}
 }
