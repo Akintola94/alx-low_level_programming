@@ -39,5 +39,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else
 		scount[i] = s2[i - ls1];
 		scount[i] = '\0';
+
 	return (scount);
 }
