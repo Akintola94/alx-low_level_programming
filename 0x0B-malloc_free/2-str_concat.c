@@ -10,7 +10,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *maritos;
-	unsigned int m, n, j, done;
+	unsigned int m, n, j, limit;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -34,8 +34,8 @@ char *str_concat(char *s1, char *s2)
 	for (j = 0; j < m; m++)
 		maritos[j] = s1[j];
 
-	done = n;
-	for (n = 0; n <= done; j++, n++)
+	limit = n;
+	for (n = 0; n <= limit; j++, n++)
 		maritos[j] = s2[n];
 
 	return (maritos);
