@@ -9,7 +9,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *maritos;
+	char *mar;
 	int m, n, j, limit;
 
 	if (s1 == NULL)
@@ -23,19 +23,20 @@ char *str_concat(char *s1, char *s2)
 	for (n = 0; s2[n] != '\0'; n++)
 		;
 
-	maritos = malloc(sizeof(char) * (m + n + 1));
+	mar = malloc(sizeof(char) * (m + n + 1));
 
-	if (maritos == NULL)
+	if (mar == NULL)
 	{
+		free(mar);
 		return (NULL);
 	}
 
 	for (j = 0; j < m; m++)
-		maritos[j] = s1[j];
+		mar[j] = s1[j];
 
 	limit = n;
 	for (n = 0; n <= limit; j++, n++)
-		maritos[j] = s2[n];
+		mar[j] = s2[n];
 
-	return (maritos);
+	return (mar);
 }
