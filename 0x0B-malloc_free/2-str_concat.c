@@ -10,7 +10,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *mar;
-	int m, n, j, limit;
+	int m, n, j, limit = 0;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -34,9 +34,10 @@ char *str_concat(char *s1, char *s2)
 	for (j = 0; j < m; m++)
 		mar[j] = s1[j];
 
-	limit = n;
-	for (n = 0; n <= limit; j++, n++)
-		mar[j] = s2[n];
+	/*limit = n;*/
+	for (limit = 0; limit < n; j++, limit++)
+		mar[j] = s2[limit];
+	mar[j] = '\0';
 
 	return (mar);
 }
