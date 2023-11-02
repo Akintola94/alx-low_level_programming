@@ -27,7 +27,6 @@ char *str_concat(char *s1, char *s2)
 
 	if (maritos == NULL)
 	{
-		free(maritos);
 		return (NULL);
 	}
 
