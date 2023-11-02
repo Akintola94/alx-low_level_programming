@@ -10,7 +10,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *maritos;
-	unsigned int m, n, j, limit;
+	int m, n, j, limit;
 
 	if (s1 == NULL)
 		s1 = "";
