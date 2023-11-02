@@ -31,13 +31,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	lscount = ls1 + n;
 	scount = malloc(lscount + 1);
 	if (scount == NULL)
-		return (NULL);
+			return (NULL);
 
 	for (i = 0; i < lscount; i++)
 		if (i < ls1)
-		scount[i] = s1[i];
+			scount[i] = s1[i];
 	else
 		scount[i] = s2[i - ls1];
+
 		scount[i] = '\0';
 
 	return (scount);
