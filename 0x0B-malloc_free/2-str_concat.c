@@ -32,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	for (j = 0; j < m; m++)
-		maritos[j] = s1[j]
+		maritos[j] = s1[j];
 
 	done = n;
 	for (n = 0; n <= done; j++, n++)
