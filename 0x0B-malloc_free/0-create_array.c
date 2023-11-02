@@ -9,13 +9,14 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	char *ch;
+	char *cr;
 	unsigned int i;
 
-	ch = malloc(sizeof(char) * size);
-	if (size == 0 || ch == NULL)
+	cr = malloc(sizeof(char) * size);
+	if (size == 0 || cr == NULL)
 		return (Null);
 
 	for (i = 0; i < size; i++)
-		ch[i] = c;
-	return (ch);
+		cr[i] = c;
+	return (cr);
+}
