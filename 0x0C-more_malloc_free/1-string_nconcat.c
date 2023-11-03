@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat - concatenate two strings
+ * string_nconcat - concentate two strings
  * @s1: string one
  * @s2: string two
  * @n: number of bytes
@@ -46,6 +46,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		}
 	}
 			scount[i] = '\0';
-	
+
 			return (scount);
 }
