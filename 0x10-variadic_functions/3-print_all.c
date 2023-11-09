@@ -37,12 +37,14 @@ void print_all(const char * const format, ...)
 					printf("%s%s", sep, str);
 					break;
 				default:
-					break;
+					i++;
+					continue;
 			}
 			sep = ",";
 			i++;
 		}
 	}
+
 	printf("\n");
 	va_end(list);
 }
