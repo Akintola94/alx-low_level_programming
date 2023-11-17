@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-void initialnode(void)__attribute__((constructor));
+void initial_node(void)__attribute__((constructor));
 
 /**
- * initialnode - start before main
+ * initial_node - start before main
  * @void: input.
  */
-void initialnode(void)
+void initial_node(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
-	printf("i bore my house upon my back!\n");
+	printf("I bore my house upon my back!\n");
 }
